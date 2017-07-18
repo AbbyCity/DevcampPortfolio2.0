@@ -15,6 +15,7 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
   
   def copyright_generator
      ViewToolPoplar::Renderer.copyright 'Abigail Poppleton', 'All rights reserved'
