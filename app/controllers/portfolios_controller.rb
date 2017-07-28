@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Your portfolio is now live.' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio is now live for all the world to see.' }
       else
         format.html { render :new }
       end
@@ -57,7 +57,7 @@ class PortfoliosController < ApplicationController
 
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record was terminated.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was successfully terminated. Goodbye record, goodbye forever.' }
     end
   end
 
