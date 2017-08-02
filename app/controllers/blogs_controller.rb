@@ -57,7 +57,7 @@ class BlogsController < ApplicationController
   def update
     respond_to do |format|
       if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Updated' }
+        format.html { redirect_to @blog, notice: 'Everything is now up to date' }
       else
         format.html { render :edit }
       end
@@ -92,7 +92,7 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id)
+      params.require(:blog).permit(:title, :body, :topic_id, :status)
     end
     
     def set_sidebar_topics
