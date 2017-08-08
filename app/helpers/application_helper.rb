@@ -9,10 +9,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "<strong>Hey there!</strong> Thank you for visiting me from #{session[:source]}. Please feel free to look around."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
   def copyright_generator

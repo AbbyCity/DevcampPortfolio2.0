@@ -26,16 +26,27 @@ a:hover {
 /*
  * Base structure
  */
+ 
 
 html,
 body {
   height: 100%;
   background-color: #677C99;
+  font-family: 'The Girl Next Door', cursive;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Fredericka the Great', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -192,3 +203,16 @@ body {
   margin-right: 16px;
 }
 
+.about-text {
+  text-align: right;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
